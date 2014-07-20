@@ -56,7 +56,7 @@ function Walker(){
 	this._run = function(directory){ 
 		directories = [];
 		files = [];
-		_walk(directory, function(){ console.log(this); self.emit('done', {directories: directories, files: files}); });
+		_walk(directory, function(){ self.emit('done', {directories: directories, files: files}); });
 	};
 
 }
